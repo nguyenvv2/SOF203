@@ -14,7 +14,11 @@ import sof203.luyentapjava2.service.IPhieuMuonService;
  */
 public class PhieuMuonServiceImpl implements IPhieuMuonService {
 
-    ArrayList<PhieuMuon> listPhieuMuon = new ArrayList<>();
+    ArrayList<PhieuMuon> listPhieuMuon;
+
+    public PhieuMuonServiceImpl() {
+        listPhieuMuon = new ArrayList<>();
+    }
 
     @Override
     public Boolean addPhieuMuon(PhieuMuon phieuMuon) {
